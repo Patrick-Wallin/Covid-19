@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/option_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="1"
+        android:title="@string/option_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Sort"
+        app:showAsAction="always">
+        <menu>
+    <item android:id="@+id/option_sort_total_confirmed_high_to_low"
+        android:title="@string/option_sort_total_confirmed_high_to_low"
+        android:orderInCategory="2"
+        app:showAsAction="collapseActionView" />
+
+    <item android:id="@+id/option_sort_total_confirmed_low_to_high"
+        android:title="@string/option_sort_total_confirmed_low_to_high"
+        android:orderInCategory="3"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/option_sort_country_a_to_z"
+        android:orderInCategory="4"
+        android:title="@string/option_sort_country_a_to_z"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/option_sort_country_z_to_a"
+        android:orderInCategory="5"
+        android:title="@string/option_sort_country_z_to_a"
+        app:showAsAction="collapseActionView" />
+        </menu>
+    </item>
+
+</menu>
